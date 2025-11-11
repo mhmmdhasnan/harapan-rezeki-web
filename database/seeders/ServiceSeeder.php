@@ -32,42 +32,6 @@ class ServiceSeeder extends Seeder
                 'icon' => '🎪',
                 'is_active' => true
             ],
-            [
-                'name' => 'Supplier & Distributor',
-                'description' => 'Menyediakan berbagai produk berkualitas sebagai supplier dan distributor terpercaya untuk kebutuhan bisnis Anda.',
-                'icon' => '📦',
-                'is_active' => true
-            ],
-            [
-                'name' => 'Konsultasi Bisnis',
-                'description' => 'Memberikan konsultasi untuk membantu Anda memilih produk yang tepat sesuai kebutuhan dan budget.',
-                'icon' => '💼',
-                'is_active' => true
-            ],
-            [
-                'name' => 'Pengadaan Barang',
-                'description' => 'Layanan pengadaan barang untuk perusahaan, instansi pemerintah, dan berbagai organisasi.',
-                'icon' => '🛒',
-                'is_active' => true
-            ],
-            [
-                'name' => 'Custom Order',
-                'description' => 'Melayani pemesanan khusus sesuai spesifikasi dan kebutuhan pelanggan.',
-                'icon' => '⚙️',
-                'is_active' => true
-            ],
-            [
-                'name' => 'After Sales Service',
-                'description' => 'Dukungan purna jual untuk memastikan kepuasan pelanggan terhadap produk yang dibeli.',
-                'icon' => '🔧',
-                'is_active' => true
-            ],
-            [
-                'name' => 'Delivery Service',
-                'description' => 'Layanan pengiriman cepat dan aman ke seluruh Indonesia.',
-                'icon' => '🚚',
-                'is_active' => true
-            ],
         ];
 
         foreach ($services as $service) {
