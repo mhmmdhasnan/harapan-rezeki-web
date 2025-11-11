@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Motif Dayak Kalimantan yang lebih bold -->
+  <defs>
+    <pattern id="dayak-pattern" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+      <!-- Belah Ketupat Besar -->
+      <path d="M 100 20 L 140 60 L 100 100 L 60 60 Z" fill="none" stroke="#8B3A3A" stroke-width="4" opacity="0.6"/>
+      <path d="M 100 100 L 140 140 L 100 180 L 60 140 Z" fill="none" stroke="#8B3A3A" stroke-width="4" opacity="0.6"/>
+      <path d="M 20 100 L 60 140 L 20 180 L -20 140 Z" fill="none" stroke="#8B3A3A" stroke-width="4" opacity="0.6"/>
+      <path d="M 180 100 L 220 140 L 180 180 L 140 140 Z" fill="none" stroke="#8B3A3A" stroke-width="4" opacity="0.6"/>
+      
+      <!-- Spiral Besar -->
+      <circle cx="100" cy="100" r="8" fill="#8B3A3A" opacity="0.7"/>
+      <circle cx="100" cy="100" r="15" fill="none" stroke="#8B3A3A" stroke-width="3" opacity="0.5"/>
+      
+      <!-- Ornamen Sudut -->
+      <circle cx="30" cy="30" r="5" fill="#8B3A3A" opacity="0.6"/>
+      <circle cx="170" cy="30" r="5" fill="#8B3A3A" opacity="0.6"/>
+      <circle cx="30" cy="170" r="5" fill="#8B3A3A" opacity="0.6"/>
+      <circle cx="170" cy="170" r="5" fill="#8B3A3A" opacity="0.6"/>
+      
+      <!-- Garis Dekoratif Tebal -->
+      <line x1="100" y1="0" x2="100" y2="30" stroke="#8B3A3A" stroke-width="3" opacity="0.5"/>
+      <line x1="100" y1="170" x2="100" y2="200" stroke="#8B3A3A" stroke-width="3" opacity="0.5"/>
+      <line x1="0" y1="100" x2="30" y2="100" stroke="#8B3A3A" stroke-width="3" opacity="0.5"/>
+      <line x1="170" y1="100" x2="200" y2="100" stroke="#8B3A3A" stroke-width="3" opacity="0.5"/>
+      
+      <!-- Motif Tambahan Belah Ketupat Kecil -->
+      <path d="M 100 60 L 110 70 L 100 80 L 90 70 Z" fill="#8B3A3A" opacity="0.4"/>
+      <path d="M 100 120 L 110 130 L 100 140 L 90 130 Z" fill="#8B3A3A" opacity="0.4"/>
+      <path d="M 60 100 L 70 110 L 60 120 L 50 110 Z" fill="#8B3A3A" opacity="0.4"/>
+      <path d="M 140 100 L 150 110 L 140 120 L 130 110 Z" fill="#8B3A3A" opacity="0.4"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="400" fill="url(#dayak-pattern)"/>
+</svg>
