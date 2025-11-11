@@ -15,21 +15,27 @@ class ServiceSeeder extends Seeder
     {
         $services = [
             [
-                'name' => 'BOGA (Catering)',
-                'description' => 'Melayani Pemasanan makanan Sesuai Kebutuhan Anda: Syukuran, Acara Kantor, Pesta Ulang Tahun, Pesta Pernikahan, Catering Harian',
+                'name' => 'Layanan Boga (Katering)',
+                'description' => 'Melayani pemesanan makanan sesuai kebutuhan Anda: Syukuran, Acara Kantor, Pesta Ulang Tahun, Pesta Pernikahan, Katering Harian',
                 'icon' => '🍽️',
                 'is_active' => true
             ],
             [
-                'name' => 'INSTALASI & CONFIGURE',
-                'description' => 'Melayani Pemasangan dan Pemasangan Jaringan: Network / Internet, CCTV, AC, Dll',
-                'icon' => '👷',
+                'name' => 'Instalasi & Konfigurasi',
+                'description' => 'Melayani pemasangan dan konfigurasi jaringan: Network/Internet, CCTV, AC, dan lainnya',
+                'icon' => '�',
                 'is_active' => true
             ],
             [
-                'name' => 'EQUIPMENT EVENT',
-                'description' => 'Melayani Pengadaan dan Jasa Rental Equipment untuk memenuhi semua kebutuhan Event Kecil & Skala Besar: Event Organizer, Soundsystem, Pro Player Music /MC, Rigging, Lighting',
+                'name' => 'Perlengkapan Acara',
+                'description' => 'Melayani pengadaan dan jasa rental perlengkapan untuk semua kebutuhan acara kecil & skala besar: Event Organizer, Sound System, Pemain Musik Profesional/MC, Rigging, Lighting',
                 'icon' => '🎪',
+                'is_active' => true
+            ],
+            [
+                'name' => 'Pembuatan & Pengembangan Website serta Aplikasi',
+                'description' => 'Jasa pembuatan dan pengembangan website profesional serta aplikasi mobile (Android & iOS) untuk perusahaan, toko online, profil bisnis, dan berbagai kebutuhan digital lainnya',
+                'icon' => '💻',
                 'is_active' => true
             ],
         ];
