@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'CV HARAPAN REZEKI MANDIRI')</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
+
 <body class="bg-gray-50">
     <!-- Navbar -->
     <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
@@ -17,16 +19,22 @@
                     </a>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="{{ route('home') }}" class="text-gray-700 hover:text-red-900 transition {{ request()->routeIs('home') ? 'text-red-900 font-semibold' : '' }}">Beranda</a>
-                    <a href="{{ route('about') }}" class="text-gray-700 hover:text-red-900 transition {{ request()->routeIs('about') ? 'text-red-900 font-semibold' : '' }}">Tentang Kami</a>
+                    <a href="{{ route('home') }}"
+                        class="text-gray-700 hover:text-red-900 transition {{ request()->routeIs('home') ? 'text-red-900 font-semibold' : '' }}">Beranda</a>
+                    <a href="{{ route('about') }}"
+                        class="text-gray-700 hover:text-red-900 transition {{ request()->routeIs('about') ? 'text-red-900 font-semibold' : '' }}">Tentang
+                        Kami</a>
                     {{-- <a href="{{ route('products') }}" class="text-gray-700 hover:text-red-900 transition {{ request()->routeIs('products') ? 'text-red-900 font-semibold' : '' }}">Produk</a> --}}
-                    <a href="{{ route('services') }}" class="text-gray-700 hover:text-red-900 transition {{ request()->routeIs('services') ? 'text-red-900 font-semibold' : '' }}">Layanan</a>
-                    <a href="{{ route('contact') }}" class="text-gray-700 hover:text-red-900 transition {{ request()->routeIs('contact') ? 'text-red-900 font-semibold' : '' }}">Kontak</a>
+                    <a href="{{ route('services') }}"
+                        class="text-gray-700 hover:text-red-900 transition {{ request()->routeIs('services') ? 'text-red-900 font-semibold' : '' }}">Layanan</a>
+                    <a href="{{ route('contact') }}"
+                        class="text-gray-700 hover:text-red-900 transition {{ request()->routeIs('contact') ? 'text-red-900 font-semibold' : '' }}">Kontak</a>
                 </div>
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-button" class="text-gray-700 hover:text-red-900 focus:outline-none">
                         <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
                 </div>
@@ -35,11 +43,16 @@
         <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
-                <a href="{{ route('home') }}" class="block px-3 py-2 text-gray-700 hover:bg-red-50 hover:text-red-900 rounded {{ request()->routeIs('home') ? 'bg-red-50 text-red-900' : '' }}">Beranda</a>
-                <a href="{{ route('about') }}" class="block px-3 py-2 text-gray-700 hover:bg-red-50 hover:text-red-900 rounded {{ request()->routeIs('about') ? 'bg-red-50 text-red-900' : '' }}">Tentang Kami</a>
+                <a href="{{ route('home') }}"
+                    class="block px-3 py-2 text-gray-700 hover:bg-red-50 hover:text-red-900 rounded {{ request()->routeIs('home') ? 'bg-red-50 text-red-900' : '' }}">Beranda</a>
+                <a href="{{ route('about') }}"
+                    class="block px-3 py-2 text-gray-700 hover:bg-red-50 hover:text-red-900 rounded {{ request()->routeIs('about') ? 'bg-red-50 text-red-900' : '' }}">Tentang
+                    Kami</a>
                 {{-- <a href="{{ route('products') }}" class="block px-3 py-2 text-gray-700 hover:bg-red-50 hover:text-red-900 rounded {{ request()->routeIs('products') ? 'bg-red-50 text-red-900' : '' }}">Produk</a> --}}
-                <a href="{{ route('services') }}" class="block px-3 py-2 text-gray-700 hover:bg-red-50 hover:text-red-900 rounded {{ request()->routeIs('services') ? 'bg-red-50 text-red-900' : '' }}">Layanan</a>
-                <a href="{{ route('contact') }}" class="block px-3 py-2 text-gray-700 hover:bg-red-50 hover:text-red-900 rounded {{ request()->routeIs('contact') ? 'bg-red-50 text-red-900' : '' }}">Kontak</a>
+                <a href="{{ route('services') }}"
+                    class="block px-3 py-2 text-gray-700 hover:bg-red-50 hover:text-red-900 rounded {{ request()->routeIs('services') ? 'bg-red-50 text-red-900' : '' }}">Layanan</a>
+                <a href="{{ route('contact') }}"
+                    class="block px-3 py-2 text-gray-700 hover:bg-red-50 hover:text-red-900 rounded {{ request()->routeIs('contact') ? 'bg-red-50 text-red-900' : '' }}">Kontak</a>
             </div>
         </div>
     </nav>
@@ -60,10 +73,13 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-4 text-red-900">Link Cepat</h4>
                     <ul class="space-y-2">
-                        <li><a href="{{ route('home') }}" class="text-gray-600 hover:text-red-900 transition">Beranda</a></li>
-                        <li><a href="{{ route('about') }}" class="text-gray-600 hover:text-red-900 transition">Tentang Kami</a></li>
+                        <li><a href="{{ route('home') }}"
+                                class="text-gray-600 hover:text-red-900 transition">Beranda</a></li>
+                        <li><a href="{{ route('about') }}" class="text-gray-600 hover:text-red-900 transition">Tentang
+                                Kami</a></li>
                         {{-- <li><a href="{{ route('products') }}" class="text-gray-600 hover:text-red-900 transition">Produk</a></li> --}}
-                        <li><a href="{{ route('services') }}" class="text-gray-600 hover:text-red-900 transition">Layanan</a></li>
+                        <li><a href="{{ route('services') }}"
+                                class="text-gray-600 hover:text-red-900 transition">Layanan</a></li>
                     </ul>
                 </div>
                 <div>
@@ -85,10 +101,11 @@
         // Mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-        
+
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
     </script>
 </body>
+
 </html>

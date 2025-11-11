@@ -7,13 +7,21 @@
     <section class="bg-gradient-to-r from-red-900 to-red-950 text-white py-20 relative overflow-hidden">
         <!-- Dayak Pattern Background -->
         <div class="absolute inset-0 opacity-30">
-            <div class="absolute -top-10 -left-10 w-80 h-80" style="background-image: url('{{ asset('images/dayak-motif.svg') }}'); background-size: contain; background-repeat: no-repeat;"></div>
-            <div class="absolute -bottom-10 -right-10 w-80 h-80" style="background-image: url('{{ asset('images/dayak-motif.svg') }}'); background-size: contain; background-repeat: no-repeat; transform: rotate(180deg);"></div>
+            <div class="absolute -top-10 -left-10 w-80 h-80"
+                style="background-image: url('{{ asset('images/dayak-motif.svg') }}'); background-size: contain; background-repeat: no-repeat;">
+            </div>
+            <div class="absolute -bottom-10 -right-10 w-80 h-80"
+                style="background-image: url('{{ asset('images/dayak-motif.svg') }}'); background-size: contain; background-repeat: no-repeat; transform: rotate(180deg);">
+            </div>
         </div>
         <!-- Border Pattern -->
-        <div class="absolute top-0 left-0 right-0 h-2 opacity-50" style="background-image: url('{{ asset('images/dayak-pattern.svg') }}'); background-repeat: repeat-x; background-size: 100px;"></div>
-        <div class="absolute bottom-0 left-0 right-0 h-2 opacity-50" style="background-image: url('{{ asset('images/dayak-pattern.svg') }}'); background-repeat: repeat-x; background-size: 100px;"></div>
-        
+        <div class="absolute top-0 left-0 right-0 h-2 opacity-50"
+            style="background-image: url('{{ asset('images/dayak-pattern.svg') }}'); background-repeat: repeat-x; background-size: 100px;">
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-2 opacity-50"
+            style="background-image: url('{{ asset('images/dayak-pattern.svg') }}'); background-repeat: repeat-x; background-size: 100px;">
+        </div>
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center">
                 <h1 class="text-4xl md:text-5xl font-bold mb-4">Tentang Kami</h1>

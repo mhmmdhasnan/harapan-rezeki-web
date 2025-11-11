@@ -4,19 +4,19 @@ Website profil perusahaan CV HARAPAN REZEKI MANDIRI yang dibangun menggunakan La
 
 ## Fitur
 
-- 🏠 **Halaman Beranda** - Menampilkan informasi perusahaan, produk, dan layanan
-- 📖 **Tentang Kami** - Profil perusahaan lengkap dengan visi dan misi
-- 📦 **Produk** - Katalog produk dengan pagination
-- 🔧 **Layanan** - Daftar layanan yang ditawarkan
-- 📞 **Kontak** - Form kontak dan informasi perusahaan
-- 📱 **Responsive Design** - Tampilan optimal di semua perangkat
+-   🏠 **Halaman Beranda** - Menampilkan informasi perusahaan, produk, dan layanan
+-   📖 **Tentang Kami** - Profil perusahaan lengkap dengan visi dan misi
+-   📦 **Produk** - Katalog produk dengan pagination
+-   🔧 **Layanan** - Daftar layanan yang ditawarkan
+-   📞 **Kontak** - Form kontak dan informasi perusahaan
+-   📱 **Responsive Design** - Tampilan optimal di semua perangkat
 
 ## Teknologi
 
-- **Framework**: Laravel 11
-- **Frontend**: Tailwind CSS
-- **Database**: SQLite (default) / MySQL / PostgreSQL
-- **Asset Bundler**: Vite
+-   **Framework**: Laravel 11
+-   **Frontend**: Tailwind CSS
+-   **Database**: SQLite (default) / MySQL / PostgreSQL
+-   **Asset Bundler**: Vite
 
 ## Instalasi
 
@@ -63,18 +63,21 @@ php artisan migrate:fresh --seed
 ```
 
 Seeder akan mengisi database dengan:
-- Informasi perusahaan
-- 10 produk sample
-- 6 layanan sample
+
+-   Informasi perusahaan
+-   10 produk sample
+-   6 layanan sample
 
 ### 6. Jalankan Development Server
 
 Terminal 1 - Laravel Server:
+
 ```bash
 php artisan serve
 ```
 
 Terminal 2 - Vite Dev Server (untuk compile assets):
+
 ```bash
 npm run dev
 ```
@@ -90,28 +93,31 @@ npm run build
 ## Struktur Database
 
 ### Tabel: company_infos
-- company_name
-- about
-- vision
-- mission
-- address
-- phone
-- email
-- logo
+
+-   company_name
+-   about
+-   vision
+-   mission
+-   address
+-   phone
+-   email
+-   logo
 
 ### Tabel: products
-- name
-- description
-- category
-- image
-- price
-- is_active
+
+-   name
+-   description
+-   category
+-   image
+-   price
+-   is_active
 
 ### Tabel: services
-- name
-- description
-- icon
-- is_active
+
+-   name
+-   description
+-   icon
+-   is_active
 
 ## Halaman Website
 
@@ -136,6 +142,7 @@ Edit file seeder: `database/seeders/ProductSeeder.php`
 Edit file seeder: `database/seeders/ServiceSeeder.php`
 
 Setelah mengedit seeder, jalankan ulang:
+
 ```bash
 php artisan migrate:fresh --seed
 ```
@@ -148,27 +155,28 @@ Config Tailwind: `tailwind.config.js`
 ## Admin Panel (Opsional)
 
 Untuk menambahkan admin panel, Anda dapat mengintegrasikan:
-- Laravel Filament
-- Laravel Nova
-- Atau membuat custom admin panel
+
+-   Laravel Filament
+-   Laravel Nova
+-   Atau membuat custom admin panel
 
 ## Deployment
 
 ### Production Checklist
 
 1. Update `.env`:
-   - Set `APP_ENV=production`
-   - Set `APP_DEBUG=false`
-   - Update `APP_URL`
-   
+    - Set `APP_ENV=production`
+    - Set `APP_DEBUG=false`
+    - Update `APP_URL`
 2. Optimize:
-   ```bash
-   composer install --optimize-autoloader --no-dev
-   php artisan config:cache
-   php artisan route:cache
-   php artisan view:cache
-   npm run build
-   ```
+
+    ```bash
+    composer install --optimize-autoloader --no-dev
+    php artisan config:cache
+    php artisan route:cache
+    php artisan view:cache
+    npm run build
+    ```
 
 3. Setup web server (Apache/Nginx)
 4. Setup database production
@@ -181,5 +189,6 @@ Proprietary - CV HARAPAN REZEKI MANDIRI
 ## Support
 
 Untuk pertanyaan dan dukungan, hubungi:
-- Email: info@harapanrezeki.com
-- Telepon: +62 812-3456-7890
+
+-   Email: info@harapanrezeki.com
+-   Telepon: +62 812-3456-7890
