@@ -84,9 +84,9 @@
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Layanan Kami</h2>
                     <div class="w-20 h-1 bg-red-900 mx-auto"></div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center max-w-5xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
                     @foreach ($services as $service)
-                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition w-full max-w-sm">
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition w-full">
                             <div class="text-4xl mb-4 text-center">{{ $service->icon ?? '📦' }}</div>
                             <h3 class="text-xl font-semibold mb-3 text-gray-800 text-center">{{ $service->name }}</h3>
                             <p class="text-gray-600 text-center">{{ $service->description }}</p>

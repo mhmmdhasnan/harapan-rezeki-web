@@ -45,7 +45,7 @@
             <section class="py-16 bg-gray-50">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex justify-center">
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
                             @foreach ($mainServices as $service)
                                 <div
                                     class="bg-white p-10 rounded-lg shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
